@@ -6,7 +6,7 @@ const projects = [
   {
     name: 'StatLens',
     href: 'https://github.com/subhaan-syed/statlens',
-    subtitle: 'A tool for training and comparing machine learning models right at on your fingertips',
+    subtitle: 'A tool for training and comparing machine learning models right at your fingertips.',
   },
   {
     name: 'Collab',
