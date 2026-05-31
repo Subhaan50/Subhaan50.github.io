@@ -31,7 +31,7 @@ export default function GradientName() {
       role="img"
       aria-label="Subhaan Syed"
       viewBox={`0 0 ${W} ${H}`}
-      className="select-none w-[320px] sm:w-[440px] md:w-[520px] lg:w-[580px] xl:w-[620px] h-auto"
+      className="select-none w-[320px] sm:w-[440px] md:w-[520px] lg:w-[580px] xl:w-[700px] 2xl:w-[760px] h-auto"
       style={{ overflow: 'visible' }}
     >
       <title>Subhaan Syed</title>

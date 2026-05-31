@@ -52,14 +52,14 @@ const experience = [
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-4 sm:px-6 md:px-12 py-12 md:py-20">
+    <main className="max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-12 md:py-20">
       {/* Hero */}
       <section className="mb-12 md:mb-16">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-12 items-start">
           {/* Left: name / tagline / links */}
           <div className="lg:shrink-0 flex flex-col gap-4">
             <GradientName />
-            <p className="italic text-neutral-500 dark:text-neutral-400 text-base">
+            <p className="italic text-neutral-500 dark:text-neutral-400 text-base xl:text-lg">
               building things that work :)
             </p>
             <nav className="flex gap-4 text-sm text-neutral-600 dark:text-neutral-400">
@@ -91,16 +91,16 @@ export default function Home() {
           </div>
           {/* Right: bio */}
           <div className="flex flex-col gap-1 lg:pt-1">
-            <p className="italic font-semibold text-lg">
+            <p className="italic font-semibold text-lg xl:text-2xl">
               Computer Science at University of Waterloo.
             </p>
-            <p className="text-neutral-700 dark:text-neutral-300 text-base">
+            <p className="text-neutral-700 dark:text-neutral-300 text-base xl:text-lg">
               Minor in Entrepreneurship.
             </p>
-            <p className="text-neutral-700 dark:text-neutral-300 text-base">
+            <p className="text-neutral-700 dark:text-neutral-300 text-base xl:text-lg">
               Software Development at UW Robotics Team.
             </p>
-            <p className="text-neutral-700 dark:text-neutral-300 text-base">
+            <p className="text-neutral-700 dark:text-neutral-300 text-base xl:text-lg">
               Previously at IICUW and FIRST Robotics.
             </p>
           </div>
@@ -109,21 +109,21 @@ export default function Home() {
 
       {/* Featured Projects */}
       <section className="mb-12 md:mb-16">
-        <h2 className="text-xl md:text-2xl font-medium italic tracking-tight mb-8 text-neutral-800 dark:text-neutral-200">
+        <h2 className="text-xl md:text-2xl xl:text-3xl font-medium italic tracking-tight mb-8 text-neutral-800 dark:text-neutral-200">
           Featured Projects
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12">
           {projects.map((project) => (
             <div key={project.name}>
               <a
                 href={project.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-semibold underline underline-offset-4 transition-colors hover:text-neutral-600 dark:hover:text-neutral-300"
+                className="text-lg xl:text-xl font-semibold underline underline-offset-4 transition-colors hover:text-neutral-600 dark:hover:text-neutral-300"
               >
                 {project.name}
               </a>
-              <p className="text-sm text-neutral-600 dark:text-neutral-300 mt-2 leading-relaxed">
+              <p className="text-sm xl:text-base text-neutral-600 dark:text-neutral-300 mt-2 leading-relaxed">
                 {project.subtitle}
               </p>
             </div>
@@ -133,7 +133,7 @@ export default function Home() {
 
       {/* Experience */}
       <section className="mb-12 md:mb-16">
-        <h2 className="text-xl md:text-2xl font-medium italic tracking-tight mb-8 text-neutral-800 dark:text-neutral-200">
+        <h2 className="text-xl md:text-2xl xl:text-3xl font-medium italic tracking-tight mb-8 text-neutral-800 dark:text-neutral-200">
           Experience
         </h2>
         <div className="flex flex-col gap-8">
@@ -143,13 +143,13 @@ export default function Home() {
 
               <div className="flex-1 min-w-0">
                 <div className="flex items-baseline justify-between gap-4">
-                  <span className="font-semibold">{item.company}</span>
-                  <span className="text-sm text-neutral-500 shrink-0">{item.date}</span>
+                  <span className="font-semibold xl:text-lg">{item.company}</span>
+                  <span className="text-sm xl:text-base text-neutral-500 shrink-0">{item.date}</span>
                 </div>
-                <p className="text-sm italic text-neutral-500 dark:text-neutral-400 mt-0.5">
+                <p className="text-sm xl:text-base italic text-neutral-500 dark:text-neutral-400 mt-0.5">
                   {item.role}
                 </p>
-                <p className="text-sm text-neutral-600 dark:text-neutral-300 mt-1 leading-relaxed">
+                <p className="text-sm xl:text-base text-neutral-600 dark:text-neutral-300 mt-1 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -160,10 +160,10 @@ export default function Home() {
 
       {/* Hobbies */}
       <section className="mb-4">
-        <h2 className="text-xl md:text-2xl font-medium italic tracking-tight mb-4 text-neutral-800 dark:text-neutral-200">
+        <h2 className="text-xl md:text-2xl xl:text-3xl font-medium italic tracking-tight mb-4 text-neutral-800 dark:text-neutral-200">
           Hobbies
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-base">
+        <p className="text-neutral-700 dark:text-neutral-300 text-base xl:text-lg">
           Outside of work, I&apos;m usually at the gym, studying in the library, or playing pool 🎱
         </p>
       </section>
