@@ -36,10 +36,34 @@ export default function GradientName() {
     >
       <title>Subhaan Syed</title>
       <defs>
-        <linearGradient id="nameGradient" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" style={{ stopColor: 'var(--name-grad-1)' }} />
-          <stop offset="50%" style={{ stopColor: 'var(--name-grad-2)' }} />
-          <stop offset="100%" style={{ stopColor: 'var(--name-grad-3)' }} />
+        {/*
+          Animated gradient via SMIL on an SVG fill — NOT background-clip:text —
+          so the colors flow smoothly with zero repaint glitches. The stops are a
+          palindrome (1→2→3→2→1) and `spreadMethod="repeat"` tiles them, so
+          translating by exactly one period (W/2) loops seamlessly with no jump.
+        */}
+        <linearGradient
+          id="nameGradient"
+          gradientUnits="userSpaceOnUse"
+          x1="0"
+          y1="0"
+          x2={W / 2}
+          y2="0"
+          spreadMethod="repeat"
+        >
+          <stop offset="0" style={{ stopColor: 'var(--name-grad-1)' }} />
+          <stop offset="0.25" style={{ stopColor: 'var(--name-grad-2)' }} />
+          <stop offset="0.5" style={{ stopColor: 'var(--name-grad-3)' }} />
+          <stop offset="0.75" style={{ stopColor: 'var(--name-grad-2)' }} />
+          <stop offset="1" style={{ stopColor: 'var(--name-grad-1)' }} />
+          <animateTransform
+            attributeName="gradientTransform"
+            type="translate"
+            from="0 0"
+            to={`${W / 2} 0`}
+            dur="6s"
+            repeatCount="indefinite"
+          />
         </linearGradient>
       </defs>
       <text

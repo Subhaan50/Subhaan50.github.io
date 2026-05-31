@@ -11,6 +11,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: 'Subhaan Syed',
   description: 'CS Student at University of Waterloo, seeking Fall 2026 co-op.',
+  icons: {
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'Subhaan Syed',
     description: 'CS Student at University of Waterloo, seeking Fall 2026 co-op.',

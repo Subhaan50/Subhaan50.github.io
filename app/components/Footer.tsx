@@ -1,3 +1,5 @@
+import GradientText from './GradientText'
+
 export default function Footer() {
   return (
     <footer className="mt-20 pt-8 border-t border-neutral-200 dark:border-neutral-800">
@@ -12,9 +14,10 @@ export default function Footer() {
 
         <a
           href="mailto:subhaan.syed@uwaterloo.ca"
-          className="text-purple-600 dark:text-purple-400 font-medium transition-opacity hover:opacity-80"
+          aria-label="Feel free to reach out!"
+          className="transition-opacity hover:opacity-80"
         >
-          Feel free to reach out!
+          <GradientText text="Feel free to reach out!" className="h-5 w-auto" />
         </a>
 
         <span>© Subhaan Syed · Last updated May 2026</span>

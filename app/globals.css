@@ -6,7 +6,8 @@ html {
   min-height: 100%;
 }
 
-/* Gradient stop colors for the SVG name (light defaults). */
+/* Gradient stop colors for the SVG name + footer link (light defaults).
+   Matches varunmathur.dev: blue-600 -> purple-600 -> pink-600. */
 :root {
   --name-grad-1: #2563eb; /* blue-600 */
   --name-grad-2: #9333ea; /* purple-600 */
