@@ -6,6 +6,21 @@ html {
   min-height: 100%;
 }
 
+/* Gradient stop colors for the SVG name (light defaults). */
+:root {
+  --name-grad-1: #2563eb; /* blue-600 */
+  --name-grad-2: #9333ea; /* purple-600 */
+  --name-grad-3: #db2777; /* pink-600 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --name-grad-1: #60a5fa; /* blue-400 */
+    --name-grad-2: #c084fc; /* purple-400 */
+    --name-grad-3: #f472b6; /* pink-400 */
+  }
+}
+
 /*
   NOTE: Do not add `background-attachment: fixed`, `animation`, or `backdrop-filter`
   on the body or any ancestor of the gradient name/links. Those force the

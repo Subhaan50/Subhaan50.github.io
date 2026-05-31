@@ -12,12 +12,7 @@ export default function Footer() {
 
         <a
           href="mailto:subhaan.syed@uwaterloo.ca"
-          className="
-            bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600
-            dark:from-blue-400 dark:via-purple-400 dark:to-pink-400
-            bg-clip-text text-transparent font-medium
-            transition-opacity hover:opacity-80
-          "
+          className="text-purple-600 dark:text-purple-400 font-medium transition-opacity hover:opacity-80"
         >
           Feel free to reach out!
         </a>
